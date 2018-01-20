@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CnP-8U-e1K" userLabel="Common stackview">
+                                <rect key="frame" x="8" y="28" width="304" height="532"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" image="set_cards" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8us-HH-62Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="139"/>
+                                        <variation key="heightClass=compact-widthClass=compact" hidden="YES"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7Hy-yh-RAu">
+                                        <rect key="frame" x="0.0" y="147" width="304" height="113"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VSk-2A-kDX" userLabel="Buttons stackview">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="113"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIS-hQ-cJh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="32.5"/>
+                                                        <color key="backgroundColor" red="0.94365934579999999" green="0.50437752550000003" blue="1" alpha="0.59540881850000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Новая игра">
+                                                            <color key="titleColor" red="0.99195677042007446" green="0.99622899293899536" blue="0.99192315340042114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="newGameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WjR-vk-Kfm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXP-jc-vTN">
+                                                        <rect key="frame" x="0.0" y="40.5" width="130" height="32"/>
+                                                        <color key="backgroundColor" red="0.94365934579098087" green="0.50437752548678139" blue="1" alpha="0.59540881849315064" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="Vav-hh-UND"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Ещё три карты">
+                                                            <color key="titleColor" red="0.99195677042007446" green="0.99622899293899536" blue="0.99192315340042114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="deal3MoreCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IYX-a0-PmD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT6-8x-KCU">
+                                                        <rect key="frame" x="0.0" y="80.5" width="130" height="32.5"/>
+                                                        <color key="backgroundColor" red="0.94365934579999999" green="0.50437752550000003" blue="1" alpha="0.59540881850000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title=" Найти сет">
+                                                            <color key="titleColor" red="0.99195677042007446" green="0.99622899293899536" blue="0.99192315340042114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="findSetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bp0-Y7-cNY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YzK-Hq-hGv" userLabel=" Game Info Labels">
+                                                <rect key="frame" x="158" y="0.0" width="146" height="113"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Счет: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="t5L-62-qhb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="146" height="22.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время: 0 сек" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="BMI-Tw-N0K">
+                                                        <rect key="frame" x="0.0" y="30.5" width="146" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Осталось карт: 69" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="YU7-JU-cPX">
+                                                        <rect key="frame" x="0.0" y="60.5" width="146" height="22.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Найдено сетов: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Q0u-79-sHV">
+                                                        <rect key="frame" x="0.0" y="91" width="146" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="A6X-Wi-pAH" userLabel="CardsButtons stackview">
+                                        <rect key="frame" x="0.0" y="268" width="304" height="264"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LKB-kb-7E0" userLabel="First Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loA-IF-mKY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="40"/>
+                                                        <state key="normal" title="▲"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hom-KK-lLV">
+                                                        <rect key="frame" x="52" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="●"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqc-x8-8vT">
+                                                        <rect key="frame" x="104" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="■"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTZ-e1-6Vh">
+                                                        <rect key="frame" x="156" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="▲"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAs-uY-dbP">
+                                                        <rect key="frame" x="208" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="■"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0X-ZJ-NyE">
+                                                        <rect key="frame" x="260" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="■"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Oc-h9-0a0" userLabel="Second Stack View">
+                                                <rect key="frame" x="0.0" y="68" width="304" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTX-nX-LnN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="▲"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzf-Aa-nWx">
+                                                        <rect key="frame" x="52" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="●"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRU-is-6rk">
+                                                        <rect key="frame" x="104" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="■"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snt-7d-knd">
+                                                        <rect key="frame" x="156" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="▲"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGP-5u-r3a">
+                                                        <rect key="frame" x="208" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="■"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpJ-O1-Mss">
+                                                        <rect key="frame" x="260" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="■"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xLo-Q0-hk5" userLabel="Third Stack View">
+                                                <rect key="frame" x="0.0" y="136" width="304" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cg5-9d-FjY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="▲"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snv-pf-8QY">
+                                                        <rect key="frame" x="52" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="●"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29x-G8-XaJ">
+                                                        <rect key="frame" x="104" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="■"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jc0-Ky-v2y">
+                                                        <rect key="frame" x="156" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="▲"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8H-Pf-kC8">
+                                                        <rect key="frame" x="208" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="■"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cu6-KG-2Nj">
+                                                        <rect key="frame" x="260" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="■"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8EC-Va-iyo" userLabel="Four Stack View">
+                                                <rect key="frame" x="0.0" y="204" width="304" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtB-24-StG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="▲"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AF-6W-DNc">
+                                                        <rect key="frame" x="52" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="●"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qx2-5X-cqF">
+                                                        <rect key="frame" x="104" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="■"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmk-5V-4hK">
+                                                        <rect key="frame" x="156" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="▲"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WO-ER-l33">
+                                                        <rect key="frame" x="208" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="■"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igp-0m-xN3">
+                                                        <rect key="frame" x="260" y="0.0" width="44" height="60"/>
+                                                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="■"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" distribution="fill"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15984934568405151" green="0.59392338991165161" blue="0.087542571127414703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CnP-8U-e1K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="0ee-5G-Xsj"/>
+                            <constraint firstItem="CnP-8U-e1K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="NrS-9U-lF7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CnP-8U-e1K" secondAttribute="trailing" constant="8" id="YqY-bx-qdQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CnP-8U-e1K" secondAttribute="bottom" constant="8" id="znE-46-Oxh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardCountLabel" destination="YU7-JU-cPX" id="3vW-8S-gpg"/>
+                        <outlet property="deal3MoreCardsLabel" destination="OXP-jc-vTN" id="cbE-Vu-tfQ"/>
+                        <outlet property="findSetButtonLabel" destination="NT6-8x-KCU" id="oxJ-3x-A16"/>
+                        <outlet property="matchedSetsLabel" destination="Q0u-79-sHV" id="3Re-VV-179"/>
+                        <outlet property="scoreLabel" destination="t5L-62-qhb" id="2GY-TP-FMc"/>
+                        <outlet property="timerLabel" destination="BMI-Tw-N0K" id="Aw2-cl-IUw"/>
+                        <outletCollection property="cardsButtons" destination="29x-G8-XaJ" collectionClass="NSMutableArray" id="8WO-AY-7RD"/>
+                        <outletCollection property="cardsButtons" destination="hom-KK-lLV" collectionClass="NSMutableArray" id="zpk-Ax-cY5"/>
+                        <outletCollection property="cardsButtons" destination="z0X-ZJ-NyE" collectionClass="NSMutableArray" id="poX-zG-EPk"/>
+                        <outletCollection property="cardsButtons" destination="zqc-x8-8vT" collectionClass="NSMutableArray" id="gFP-yT-5V0"/>
+                        <outletCollection property="cardsButtons" destination="Jc0-Ky-v2y" collectionClass="NSMutableArray" id="hrd-11-ZrW"/>
+                        <outletCollection property="cardsButtons" destination="9WO-ER-l33" collectionClass="NSMutableArray" id="mAz-cc-6mT"/>
+                        <outletCollection property="cardsButtons" destination="wpJ-O1-Mss" collectionClass="NSMutableArray" id="8fH-Qm-qxW"/>
+                        <outletCollection property="cardsButtons" destination="rmk-5V-4hK" collectionClass="NSMutableArray" id="joQ-96-TdP"/>
+                        <outletCollection property="cardsButtons" destination="RtB-24-StG" collectionClass="NSMutableArray" id="loU-3p-WEp"/>
+                        <outletCollection property="cardsButtons" destination="GAs-uY-dbP" collectionClass="NSMutableArray" id="wxW-u8-FPy"/>
+                        <outletCollection property="cardsButtons" destination="loA-IF-mKY" collectionClass="NSMutableArray" id="ene-lZ-sD2"/>
+                        <outletCollection property="cardsButtons" destination="VTZ-e1-6Vh" collectionClass="NSMutableArray" id="OfY-WP-85d"/>
+                        <outletCollection property="cardsButtons" destination="Snt-7d-knd" collectionClass="NSMutableArray" id="9g2-pP-n0c"/>
+                        <outletCollection property="cardsButtons" destination="Yzf-Aa-nWx" collectionClass="NSMutableArray" id="BfO-h8-2A1"/>
+                        <outletCollection property="cardsButtons" destination="iTX-nX-LnN" collectionClass="NSMutableArray" id="O2B-Hb-32F"/>
+                        <outletCollection property="cardsButtons" destination="Cu6-KG-2Nj" collectionClass="NSMutableArray" id="Yne-Bf-wCD"/>
+                        <outletCollection property="cardsButtons" destination="o8H-Pf-kC8" collectionClass="NSMutableArray" id="C8L-0G-mdO"/>
+                        <outletCollection property="cardsButtons" destination="Qx2-5X-cqF" collectionClass="NSMutableArray" id="Hzy-so-SOj"/>
+                        <outletCollection property="cardsButtons" destination="TGP-5u-r3a" collectionClass="NSMutableArray" id="OT3-h4-Utm"/>
+                        <outletCollection property="cardsButtons" destination="snv-pf-8QY" collectionClass="NSMutableArray" id="m2C-eT-8wB"/>
+                        <outletCollection property="cardsButtons" destination="kRU-is-6rk" collectionClass="NSMutableArray" id="FHP-Kz-9If"/>
+                        <outletCollection property="cardsButtons" destination="cg5-9d-FjY" collectionClass="NSMutableArray" id="uLl-9M-AIy"/>
+                        <outletCollection property="cardsButtons" destination="Igp-0m-xN3" collectionClass="NSMutableArray" id="kki-gz-rql"/>
+                        <outletCollection property="cardsButtons" destination="3AF-6W-DNc" collectionClass="NSMutableArray" id="4A8-cA-eJK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="118.20652173913044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="set_cards" width="178" height="139"/>
+    </resources>
+</document>
