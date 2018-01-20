@@ -28,6 +28,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func touchCard(_ sender: UIButton) {
+        print ("Its connected!")
+    }
     
     @IBAction func deal3MoreCards(_ sender: UIButton) {
     }

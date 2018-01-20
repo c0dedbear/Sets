@@ -19,6 +19,8 @@ import Foundation
 
 struct Card {
     
+    var color: cardColor
+    
     enum cardColor {
         case red, green, blue
     }
@@ -28,7 +30,6 @@ struct Card {
         case oval = "●"
         case square = "■"
     }
-    
     enum cardAmount {
         case one, two, three
     }
@@ -36,9 +37,10 @@ struct Card {
     enum cardFilling {
         case filled, notFilled, striped
     }
-
+    
     
 }
+
 
 
 

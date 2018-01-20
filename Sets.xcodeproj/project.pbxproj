@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A893B34920134E9D007ACE62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B73E1A2012C3E4000DE47B /* Assets.xcassets */; };
 		A8B73E142012C3E4000DE47B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B73E132012C3E4000DE47B /* AppDelegate.swift */; };
 		A8B73E162012C3E4000DE47B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B73E152012C3E4000DE47B /* ViewController.swift */; };
 		A8B73E192012C3E4000DE47B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B73E172012C3E4000DE47B /* Main.storyboard */; };
-		A8B73E1B2012C3E4000DE47B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B73E1A2012C3E4000DE47B /* Assets.xcassets */; };
 		A8B73E1E2012C3E4000DE47B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B73E1C2012C3E4000DE47B /* LaunchScreen.storyboard */; };
 		A8B73E272012C46D000DE47B /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B73E262012C46D000DE47B /* SetGame.swift */; };
 		A8B73E292012C4D0000DE47B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B73E282012C4D0000DE47B /* Card.swift */; };
@@ -145,7 +145,7 @@
 			files = (
 				A8B73E2D2012F06C000DE47B /* .gitignore in Resources */,
 				A8B73E1E2012C3E4000DE47B /* LaunchScreen.storyboard in Resources */,
-				A8B73E1B2012C3E4000DE47B /* Assets.xcassets in Resources */,
+				A893B34920134E9D007ACE62 /* Assets.xcassets in Resources */,
 				A8B73E192012C3E4000DE47B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
