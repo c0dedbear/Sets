@@ -12,7 +12,7 @@
 		A8B73E162012C3E4000DE47B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B73E152012C3E4000DE47B /* ViewController.swift */; };
 		A8B73E192012C3E4000DE47B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B73E172012C3E4000DE47B /* Main.storyboard */; };
 		A8B73E1E2012C3E4000DE47B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B73E1C2012C3E4000DE47B /* LaunchScreen.storyboard */; };
-		A8B73E272012C46D000DE47B /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B73E262012C46D000DE47B /* SetGame.swift */; };
+		A8B73E272012C46D000DE47B /* Sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B73E262012C46D000DE47B /* Sets.swift */; };
 		A8B73E292012C4D0000DE47B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B73E282012C4D0000DE47B /* Card.swift */; };
 		A8B73E2B2012D55D000DE47B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B73E2A2012D55D000DE47B /* Extensions.swift */; };
 		A8B73E2D2012F06C000DE47B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A8B73E2C2012F06C000DE47B /* .gitignore */; };
@@ -26,7 +26,7 @@
 		A8B73E1A2012C3E4000DE47B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8B73E1D2012C3E4000DE47B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8B73E1F2012C3E4000DE47B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8B73E262012C46D000DE47B /* SetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
+		A8B73E262012C46D000DE47B /* Sets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sets.swift; sourceTree = "<group>"; };
 		A8B73E282012C4D0000DE47B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A8B73E2A2012D55D000DE47B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A8B73E2C2012F06C000DE47B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		A8B73E252012C42A000DE47B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A8B73E262012C46D000DE47B /* SetGame.swift */,
+				A8B73E262012C46D000DE47B /* Sets.swift */,
 				A8B73E282012C4D0000DE47B /* Card.swift */,
 			);
 			path = Model;
@@ -159,7 +159,7 @@
 			files = (
 				A8B73E2B2012D55D000DE47B /* Extensions.swift in Sources */,
 				A8B73E162012C3E4000DE47B /* ViewController.swift in Sources */,
-				A8B73E272012C46D000DE47B /* SetGame.swift in Sources */,
+				A8B73E272012C46D000DE47B /* Sets.swift in Sources */,
 				A8B73E142012C3E4000DE47B /* AppDelegate.swift in Sources */,
 				A8B73E292012C4D0000DE47B /* Card.swift in Sources */,
 			);

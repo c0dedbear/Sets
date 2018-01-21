@@ -8,10 +8,11 @@
 
 import Foundation
 
-class SetGame
+class Sets
 {
     let cards = [Card]()
-    
+    var isAllMatched = false
+    var isAllDifferent = false
     
     func chooseCard(at index: Int) {
     let card = cards[index].color

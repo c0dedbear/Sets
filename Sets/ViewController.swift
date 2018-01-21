@@ -21,20 +21,29 @@ class ViewController: UIViewController {
     @IBOutlet var cardsButtons: [UIButton]!
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateView()
     }
-
-
+    
+    //MARK: обновляем view
+    func updateView() {
+        
+        for button in cardsButtons {
+            button.layer.cornerRadius = 8
+        }
+        
+    }
+    
+    
     @IBAction func touchCard(_ sender: UIButton) {
         print ("Its connected!")
     }
     
     @IBAction func deal3MoreCards(_ sender: UIButton) {
     }
-
+    
     @IBAction func findSetButtonPressed(_ sender: UIButton) {
     }
     @IBAction func newGameButtonPressed(_ sender: UIButton) {
