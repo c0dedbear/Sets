@@ -17,20 +17,23 @@ import Foundation
 //
 
 
-struct Card {
+struct Card
+{
+//    var color: cardColor
+//    var symbol: cardSymbol
+//    var count: cardSymbolCount
+//    var filling: cardFilling
     
-    var color: cardColor
+    var identifier: Int
     
     enum cardColor {
         case red, green, blue
     }
     
-    enum cardSymbol: String {
-        case triangle = "▲"
-        case oval = "●"
-        case square = "■"
+    enum cardSymbol {
+        case triangle, oval, square
     }
-    enum cardAmount {
+    enum cardSymbolCount {
         case one, two, three
     }
     
@@ -38,6 +41,17 @@ struct Card {
         case filled, notFilled, striped
     }
     
+    
+    private static var idFactory = 0
+    
+    private static func getUniqueIdentifier() -> Int {
+        idFactory += 1
+        return idFactory
+    }
+    
+    init() {
+       self.identifier = Card.getUniqueIdentifier()
+    }
     
 }
 
